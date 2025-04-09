@@ -1,0 +1,152 @@
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: #333;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2c3e50;
+    text-align: center;
+    margin: 3rem 0 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+    text-align: center;
+    color: #6B4A3A;
+}
+
+/* Navigation Bar */
+nav {
+    background: #C4A484;
+    padding: 1.2rem 2rem;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px #6B4A3A;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: left;
+}
+nav .logo{
+    size: 2%;
+}
+nav .nav-brand{
+    color:#2c3e50;
+    text-decoration:firebrick;
+    display: flex;
+    width: 10%;
+    height: 20%;
+}
+nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/* Content Container */
+.container {
+    max-width: 2500px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background: dimgrey;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav a {
+        margin: 0.3rem 0;
+        display: block;
+    }
+}
+
+/* Hover Effects */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    background: lightgrey;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.email-button {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.email-button:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+}

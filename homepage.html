@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidring: Spinning your way out of boredom</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Include Splide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- Custom Fonts for Jewelry-like Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="homepage.html">
+                <img src="https://i.ibb.co/3mbPp11b/Screenshot-2025-04-03-8-27-26-AM.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="aboutus.html">About</a>
+            <a href="shopage.html">Shop</a>
+            <a href="images.html">Image Gallery</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="carousel-background">
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://dailysale.com/cdn/shop/files/rotatable-anxiety-fidget-ring-moon-and-star-design-rings-dailysale-641838.jpg?v=1735457806" class="d-block" alt="Description of first image">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.bunmo.com/cdn/shop/files/rings.jpg?v=1710722030" class="d-block" alt="Description of second image">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJSWN-ue3ixTWog_SEQA5QUJ2wprS9v6edg&s" class="d-block" alt="Description of third image">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Never Get Bored Again</h1>
+            <p>Premium yet affordable fidget toys for enhanced concentration and stress relief</p>
+            <a href="shopage.html" class="cta-button">Explore our Collection</a>
+        </div>
+    </div>
+
+    <!-- Product Categories Section -->
+    <div class="product-categories">
+        <h2>Our Ring Collections</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://m.media-amazon.com/images/I/61EMT+pBJbL._AC_UY1000_.jpg" alt="Spinning Rings">
+                <h3>Fidring Magnet Edition</h3>
+                <p>Revolutionary fidget rings with magnetic bands for endless finger stimuli and interaction.</p>
+            </div>
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7tXXyMjS_CKcZN_MwHY7oJr_U0zndQv4wA&s" alt="Anxiety Rings">
+                <h3>Fidring Anxiety Edition</h3>
+                <p>Designed with calming patterns and textures to help reduce stress and anxiety.</p>
+            </div>
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_3FHjr8VWCK4YUFK8SsgldZokBEgYJ6zJMA&s" alt="Designer Rings">
+                <h3>Fidring Gemstone Edition</h3>
+                <p>Stylish rings that make a fashion statement.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Splide.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- Initialize Splide -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-carousel', {
+                type: 'loop',
+                autoplay: true,
+                interval: 3000,
+                pauseOnHover: true,
+                heightRatio: 0.5,
+                cover: true,
+                arrows: true,
+                pagination: true,
+            }).mount();
+        });
+    </script>
+
+    <!-- Custom CSS (Inline for Example) -->
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            color: #fbfbfb;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fafafa;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            padding: 0;
+            color: white;
+        }
+
+        .carousel-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .carousel-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            padding: 50px 20px;
+            color: #E6D5C3; /* Changed from antiquewhite to a coffee-with-milk color */
+        }
+
+        .hero-content h1 {
+            color: #E6D5C3;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            color: #E6D5C3;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .product-categories {
+            padding: 60px 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .product-categories h2 {
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .category-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .category-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .splide__slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Jewelry-like rounded edges */
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #333;
+            width: 100%;
+            margin: 0;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            color: #E6D5C3;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-section p {
+            color: #E6D5C3;
+            margin: 0.5rem auto;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .email-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #555;
+            color: #E6D5C3;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .email-button:hover {
+            background-color: #666;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #333;
+            color: #E6D5C3;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: #333;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2c3e50;
+    text-align: center;
+    margin: 3rem 0 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+    text-align: center;
+    color: #6B4A3A;
+}
+
+/* Navigation Bar */
+nav {
+    background: #666;
+    padding: 1.2rem 2rem;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px #6B4A3A;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: left;
+}
+nav .logo{
+    size: 2%;
+}
+nav .nav-brand{
+    color:#2c3e50;
+    text-decoration:firebrick;
+    display: flex;
+    width: 10%;
+    height: 20%;
+}
+nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/* Content Container */
+.container {
+    max-width: 2500px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background: dimgrey;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav a {
+        margin: 0.3rem 0;
+        display: block;
+    }
+}
+
+/* Hover Effects */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    background: #666;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.email-button {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.email-button:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+}
+        
+    </style>
+
+    <footer>
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions? We'd love to hear from you!</p>
+            <a href="mailto:367815@fidring.com" class="email-button">Send us an email</a>
+            <p>You can also call us at 669-230-1921</p>
+            <p>&copy; 2025 Fidring. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

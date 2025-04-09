@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidring Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="homepage.html">
+                <img src="https://i.ibb.co/3mbPp11b/Screenshot-2025-04-03-8-27-26-AM.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="aboutus.html">About</a>
+            <a href="shopage.html">Shop</a>
+            <a href="images.html">Image Gallery</a>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <div class="shop-header">
+        <h1>Our Collection</h1>
+        <p>Find your perfect fidget ring</p>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT_dF7ZYbLUWtn269LgjOZiMOlSuybUB1tApvXOlH6rIESGho8zNgBfxPpdXYYvbEsZgxJYqhmO-5ZuAwjUqkYks500WyCFg54JdfVKA6fQ014jotBALYq1" alt="Magnetic Fidget Ring">
+            <h3>Magnetic Fidget Ring</h3>
+            <p>Interactive magnetic bands for endless fidgeting</p>
+            <span class="price">$5.99</span>
+            <a href="customize.html?product=magnetic" class="buy-button">Customize & Buy</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7tXXyMjS_CKcZN_MwHY7oJr_U0zndQv4wA&s" alt="Anxiety Relief Ring">
+            <h3>Anxiety Relief Ring</h3>
+            <p>Calming patterns for stress relief</p>
+            <span class="price">$6.99</span>
+            <a href="customize.html?product=anxiety" class="buy-button">Customize & Buy</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_3FHjr8VWCK4YUFK8SsgldZokBEgYJ6zJMA&s" alt="Gemstone Fidget Ring">
+            <h3>Gemstone Fidget Ring</h3>
+            <p>Luxury spinning ring with gemstone accents</p>
+            <span class="price">$12.99</span>
+            <a href="customize.html?product=gemstone" class="buy-button">Customize & Buy</a>
+        </div>
+    </div>
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #666;
+            color: #E6D5C3;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #222;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #E6D5C3;
+            font-weight: bold;
+        }
+
+        .shop-header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #333;
+        }
+
+        .shop-header h1 {
+            color: #E6D5C3;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .shop-header p {
+            color: #E6D5C3;
+            font-size: 1.2rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: #444;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            color: #E6D5C3;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            display: block;
+            color: #E6D5C3;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #E6D5C3;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #E6D5C3;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-top: 40px;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #333;
+            width: 100%;
+            margin: 0;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            color: #E6D5C3;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-section p {
+            color: #E6D5C3;
+            margin: 0.5rem auto;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .email-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #555;
+            color: #E6D5C3;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .email-button:hover {
+            background-color: #666;
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <footer>
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions? We'd love to hear from you!</p>
+            <a href="mailto:367815@fidring.com" class="email-button">Send us an email</a>
+            <p>You can also call us at 669-230-1921</p>
+            <p>&copy; 2025 Fidring. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
